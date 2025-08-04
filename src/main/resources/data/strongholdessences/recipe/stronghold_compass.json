@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "SRU",
+        "###"
+    ],
+    "key": {
+        "#": "minecraft:ender_eye",
+        "S": "strongholdessences:hostile_essence",
+        "R": "minecraft:compass",
+        "U": "strongholdessences:passive_essence"
+    },
+    "result": {
+        "id": "strongholdessences:stronghold_compass",
+        "count": 1
+    }
+}

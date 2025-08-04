@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "strongholdessences:cleric_essence",
+    "strongholdessences:librarian_essence",
+    "strongholdessences:trail_essence",
+    "strongholdessences:buried_essence",
+    "strongholdessences:igloo_essence",
+    "strongholdessences:colourful_essence",
+    "strongholdessences:lucky_essence",
+    "strongholdessences:saturating_essence",
+    "minecraft:netherite_scrap"
+  ],
+  "result": {
+    "id": "strongholdessences:passive_essence",
+    "count": 1
+  }
+}

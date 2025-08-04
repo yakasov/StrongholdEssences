@@ -1,0 +1,25 @@
+{
+  "item.strongholdessences.warden_essence": "Warden Essence",
+  "item.strongholdessences.wither_essence": "Wither Essence",
+  "item.strongholdessences.woodland_essence": "Woodland Essence",
+  "item.strongholdessences.monument_essence": "Monument Essence",
+  "item.strongholdessences.trial_essence": "Trial Essence",
+  "item.strongholdessences.bastion_essence": "Bastion Essence",
+  "item.strongholdessences.ancient_essence": "Ancient Essence",
+  "item.strongholdessences.raid_essence": "Raid Essence",
+
+  "item.strongholdessences.cleric_essence": "Cleric Essence",
+  "item.strongholdessences.librarian_essence": "Librarian Essence",
+  "item.strongholdessences.trail_essence": "Trail Essence",
+  "item.strongholdessences.buried_essence": "Buried Essence",
+  "item.strongholdessences.igloo_essence": "Igloo Essence",
+  "item.strongholdessences.colourful_essence": "Colorful Essence",
+  "item.strongholdessences.lucky_essence": "Lucky Essence",
+  "item.strongholdessences.saturating_essence": "Saturating Essence",
+
+  "item.strongholdessences.hostile_essence": "Hostile Essence",
+  "item.strongholdessences.passive_essence": "Passive Essence",
+  "item.strongholdessences.stronghold_compass": "Stronghold Compass",
+
+  "itemGroup.strongholdessences.essence_group": "Stronghold Essences"
+}

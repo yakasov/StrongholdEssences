@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "strongholdessences:warden_essence",
+    "strongholdessences:wither_essence",
+    "strongholdessences:woodland_essence",
+    "strongholdessences:monument_essence",
+    "strongholdessences:trial_essence",
+    "strongholdessences:bastion_essence",
+    "strongholdessences:ancient_essence",
+    "strongholdessences:raid_essence",
+    "minecraft:netherite_scrap"
+  ],
+  "result": {
+    "id": "strongholdessences:hostile_essence",
+    "count": 1
+  }
+}
