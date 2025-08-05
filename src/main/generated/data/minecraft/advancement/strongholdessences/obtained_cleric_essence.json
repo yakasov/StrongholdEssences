@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_cleric_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:cleric_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Fully befriend a Cleric",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:warden_essence"
+    },
+    "title": "Obtain Cleric Essence"
+  },
+  "requirements": [
+    [
+      "obtained_cleric_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

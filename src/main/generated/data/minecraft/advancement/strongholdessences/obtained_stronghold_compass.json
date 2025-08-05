@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/root",
+  "criteria": {
+    "obtained_stronghold_compass": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:stronghold_compass"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Create the Stronghold Compass",
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:stronghold_compass"
+    },
+    "title": "Off To The Stronghold"
+  },
+  "requirements": [
+    [
+      "obtained_stronghold_compass"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_trial_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:trial_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Conquer a Trial",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:trial_essence"
+    },
+    "title": "Obtain Trial Essence"
+  },
+  "requirements": [
+    [
+      "obtained_trial_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

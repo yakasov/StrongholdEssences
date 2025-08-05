@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_trail_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:trail_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Sift through suspicious blocks",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:trail_essence"
+    },
+    "title": "Obtain Trail Essence"
+  },
+  "requirements": [
+    [
+      "obtained_trail_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

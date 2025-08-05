@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_saturating_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:saturating_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Collect and combine many exotic foods",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:saturating_essence"
+    },
+    "title": "Obtain Saturating Essence"
+  },
+  "requirements": [
+    [
+      "obtained_saturating_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

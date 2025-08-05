@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/root",
+  "criteria": {
+    "obtained_passive_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:passive_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Combine all the somewhat passive essences",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:passive_essence"
+    },
+    "title": "Obtain Passive Essence"
+  },
+  "requirements": [
+    [
+      "obtained_passive_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

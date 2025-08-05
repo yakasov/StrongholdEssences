@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_ancient_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:ancient_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Delve into an Ancient City",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:ancient_essence"
+    },
+    "title": "Obtain Ancient Essence"
+  },
+  "requirements": [
+    [
+      "obtained_ancient_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

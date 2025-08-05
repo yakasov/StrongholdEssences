@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_buried_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:buried_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Follow a Treasure Map",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:buried_essence"
+    },
+    "title": "Obtain Buried Essence"
+  },
+  "requirements": [
+    [
+      "obtained_buried_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

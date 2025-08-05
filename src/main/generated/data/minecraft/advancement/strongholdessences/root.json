@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "install_essences": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "background": "minecraft:block/sculk",
+    "description": "Find 16 Essences to create a Stronghold Compass!",
+    "icon": {
+      "count": 1,
+      "id": "minecraft:ender_eye"
+    },
+    "title": "Where's The Stronghold?"
+  },
+  "requirements": [
+    [
+      "install_essences"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

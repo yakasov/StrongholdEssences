@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_igloo_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:igloo_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Find refuge in the snow",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:igloo_essence"
+    },
+    "title": "Obtain Igloo Essence"
+  },
+  "requirements": [
+    [
+      "obtained_igloo_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:honey_bottle",
+    "minecraft:pufferfish",
+    "minecraft:pumpkin_pie",
+    "minecraft:rabbit_stew",
+    "minecraft:golden_carrot",
+    "minecraft:golden_apple",
+    "minecraft:glow_berries",
+    "minecraft:poisonous_potato",
+    "minecraft:suspicious_stew"
+  ],
+  "result": {
+    "count": 1,
+    "id": "strongholdessences:saturating_essence"
+  }
+}

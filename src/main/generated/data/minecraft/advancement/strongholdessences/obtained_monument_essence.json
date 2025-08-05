@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_monument_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:monument_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Fell an Elder Guardian",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:monument_essence"
+    },
+    "title": "Obtain Monument Essence"
+  },
+  "requirements": [
+    [
+      "obtained_monument_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

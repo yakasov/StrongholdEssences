@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_woodland_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:woodland_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Best an Invoker",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:woodland_essence"
+    },
+    "title": "Obtain Woodland Essence"
+  },
+  "requirements": [
+    [
+      "obtained_woodland_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

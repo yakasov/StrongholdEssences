@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_wither_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:wither_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Destroy the Wither",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:wither_essence"
+    },
+    "title": "Obtain Wither Essence"
+  },
+  "requirements": [
+    [
+      "obtained_wither_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

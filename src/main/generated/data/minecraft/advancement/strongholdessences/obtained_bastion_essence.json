@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_bastion_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:bastion_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Explore a Bastion",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:warden_essence"
+    },
+    "title": "Obtain Bastion Essence"
+  },
+  "requirements": [
+    [
+      "obtained_bastion_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

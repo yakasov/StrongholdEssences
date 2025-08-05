@@ -15,51 +15,13 @@ public class LootTableModifier {
     public static void modifyLootTables() {
         LootTableEvents.MODIFY.register(((registryKey, builder, lootTableSource, wrapperLookup) -> {
             if (lootTableSource.isBuiltin()) {
-                // Warden Essence
-                if (EntityType.WARDEN.getLootTableKey().equals(Optional.of(registryKey))) {
-                    builder.modifyPools(poolBuilder -> {
-                        poolBuilder.with(ItemEntry.builder(EssenceItems.WARDEN_ESSENCE)
-                                .apply(SetCountLootFunction.builder(
-                                        UniformLootNumberProvider.create(1.0F, 1.0F)
-                                ))
-                        );
-                    });
-                }
-
-                // Wither Essence
-                if (EntityType.WITHER.getLootTableKey().equals(Optional.of(registryKey))) {
-                    builder.modifyPools(poolBuilder -> {
-                        poolBuilder.with(ItemEntry.builder(EssenceItems.WITHER_ESSENCE)
-                                .apply(SetCountLootFunction.builder(
-                                        UniformLootNumberProvider.create(1.0F, 1.0F)
-                                ))
-                        );
-                    });
-                }
-
-                // Woodland Essence
-                if (EntityType.EVOKER.getLootTableKey().equals(Optional.of(registryKey))) {
-                    builder.modifyPools(poolBuilder -> {
-                        poolBuilder.with(ItemEntry.builder(EssenceItems.WOODLAND_ESSENCE)
-                                .apply(SetCountLootFunction.builder(
-                                        UniformLootNumberProvider.create(1.0F, 1.0F)
-                                ))
-                        );
-                    });
-                }
-
-                // Monument Essence
-                if (EntityType.GUARDIAN.getLootTableKey().equals(Optional.of(registryKey))) {
-                    builder.modifyPools(poolBuilder -> {
-                        poolBuilder.with(ItemEntry.builder(EssenceItems.MONUMENT_ESSENCE)
-                                .apply(SetCountLootFunction.builder(
-                                        UniformLootNumberProvider.create(1.0F, 1.0F)
-                                ))
-                        );
-                    });
-                }
-
-                // Monument Essence
+                /*
+                 * Monument Essence
+                 *
+                 * Every other entity uses dropEquipment for guaranteed single drops but
+                 * Ocean Guardians should have a chance for the Essence rather than guaranteed
+                 * so we can just edit the drop table here
+                 */
                 if (EntityType.GUARDIAN.getLootTableKey().equals(Optional.of(registryKey))) {
                     builder.modifyPools(poolBuilder -> {
                         poolBuilder.with(ItemEntry.builder(EssenceItems.MONUMENT_ESSENCE)
@@ -99,17 +61,6 @@ public class LootTableModifier {
                     builder.modifyPools(poolBuilder -> {
                         poolBuilder.with(ItemEntry.builder(EssenceItems.ANCIENT_ESSENCE)
                                 .weight(2)
-                                .apply(SetCountLootFunction.builder(
-                                        UniformLootNumberProvider.create(1.0F, 1.0F)
-                                ))
-                        );
-                    });
-                }
-
-                // Raid Essence
-                if (EntityType.RAVAGER.getLootTableKey().equals(Optional.of(registryKey))) {
-                    builder.modifyPools(poolBuilder -> {
-                        poolBuilder.with(ItemEntry.builder(EssenceItems.RAID_ESSENCE)
                                 .apply(SetCountLootFunction.builder(
                                         UniformLootNumberProvider.create(1.0F, 1.0F)
                                 ))

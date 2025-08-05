@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_raid_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:raid_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Stop the destroyer of villages",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:raid_essence"
+    },
+    "title": "Obtain Raid Essence"
+  },
+  "requirements": [
+    [
+      "obtained_raid_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

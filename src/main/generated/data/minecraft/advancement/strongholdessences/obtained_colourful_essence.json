@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_colourful_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:colourful_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Surround cake in a rainbow of wool",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:colourful_essence"
+    },
+    "title": "Obtain Colorful Essence"
+  },
+  "requirements": [
+    [
+      "obtained_colourful_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    "minecraft:rabbit_foot",
+    "minecraft:turtle_scute",
+    "minecraft:armadillo_scute",
+    "minecraft:goat_horn",
+    "minecraft:slime_ball",
+    "minecraft:pink_petals",
+    "minecraft:resin_clump",
+    "minecraft:torchflower",
+    "minecraft:nautilus_shell"
+  ],
+  "result": {
+    "count": 1,
+    "id": "strongholdessences:lucky_essence"
+  }
+}

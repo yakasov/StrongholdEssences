@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_hostile_essence",
+  "criteria": {
+    "obtained_warden_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:warden_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Send a Warden back underground for good",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:warden_essence"
+    },
+    "title": "Obtain Warden Essence"
+  },
+  "requirements": [
+    [
+      "obtained_warden_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -4,6 +4,13 @@
   "package": "com.yakasov.strongholdessences.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "entity.EvokerEntityMixin",
+    "entity.RavagerEntityMixin",
+    "entity.WardenEntityMixin",
+    "entity.WitherEntityMixin",
+    "item.EnderEyeItemMixin",
+    "structure.StructureSetsMixin",
+    "village.RaidMixin"
   ],
   "client": [
   ],

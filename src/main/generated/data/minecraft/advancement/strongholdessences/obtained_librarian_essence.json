@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:strongholdessences/obtained_passive_essence",
+  "criteria": {
+    "obtained_librarian_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": "strongholdessences:librarian_essence"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Impress a Librarian",
+    "frame": "goal",
+    "icon": {
+      "count": 1,
+      "id": "strongholdessences:librarian_essence"
+    },
+    "title": "Obtain Librarian Essence"
+  },
+  "requirements": [
+    [
+      "obtained_librarian_essence"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
