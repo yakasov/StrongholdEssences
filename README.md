@@ -19,9 +19,9 @@ Requires exploration across the world to find the Stronghold and activate the En
 - Trail Essence (added to Sus Sand/Gravel loot tables)
 - Buried Essence (added to buried treasure loot table)
 - Igloo Essence (guaranteed Igloo chest spawn)
-- Colourful Essence (crafted from cake + RGBY wools)
-- Lucky Essence (rabbit's foot + turtle scute + armadillo scute + any goat horn + slimeball)
-- Saturating Essence (honeycomb + pufferfish + pumpkin pie + rabbit stew + golden carrot)
+- Colourful Essence (craftable)
+- Lucky Essence (craftable)
+- Saturating Essence (craftable)
 - Netherite Scrap
 
 ## Stronghold Compass
@@ -35,3 +35,29 @@ Eyes of Ender will no longer function.
 Stronghold rings are further away from spawn.
 
 Woodland Mansions have less distance between each other.
+
+## Crafting Recipes
+
+### Colourful Essence
+
+![Colourful Essence crafting recipe](./images/colourful_essence.png)
+
+### Lucky Essence
+
+![Lucky Essence crafting recipe](./images/lucky_essence.png)
+
+### Saturating Essence
+
+![Saturating Essence crafting recipe](./images/saturating_essence.png)
+
+### Hostile Essence
+
+![Hostile Essence crafting recipe](./images/hostile_essence.png)
+
+### Passive Essence
+
+![Passive Essence crafting recipe](./images/passive_essence.png)
+
+### Stronghold Compass
+
+![Stronghold Compass crafting recipe](./images/stronghold_compass.png)
