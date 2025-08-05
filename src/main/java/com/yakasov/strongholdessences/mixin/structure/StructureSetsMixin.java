@@ -1,6 +1,8 @@
 package com.yakasov.strongholdessences.mixin.structure;
 
+import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.structure.StructureSets;
+import net.minecraft.world.gen.chunk.placement.ConcentricRingsStructurePlacement;
 import net.minecraft.world.gen.chunk.placement.RandomSpreadStructurePlacement;
 import net.minecraft.world.gen.chunk.placement.SpreadType;
 import org.spongepowered.asm.mixin.Mixin;
@@ -45,5 +47,25 @@ public interface StructureSetsMixin {
             return new RandomSpreadStructurePlacement(20, 25, SpreadType.TRIANGULAR, salt);
         }
         return new RandomSpreadStructurePlacement(spacing, separation, spreadType, salt);
+    }
+
+    @Redirect(
+            method = "bootstrap",
+            at = @At(
+                    value = "NEW",
+                    target = "Lnet/minecraft/world/gen/chunk/placement/ConcentricRingsStructurePlacement;"
+            )
+    )
+    private static ConcentricRingsStructurePlacement modifyStrongholdPlacement(
+            int distance,
+            int spread,
+            int structureCount,
+            RegistryEntryList preferredBiomes
+    ) {
+        // new ConcentricRingsStructurePlacement(32, 3, 128, registryEntryLookup2.getOrThrow(BiomeTags.STRONGHOLD_BIASED_TO))
+        if (distance == 32 && spread == 3 && structureCount == 128) {
+            return new ConcentricRingsStructurePlacement(48, spread, structureCount, preferredBiomes);
+        }
+        return new ConcentricRingsStructurePlacement(distance, spread, structureCount, preferredBiomes);
     }
 }
