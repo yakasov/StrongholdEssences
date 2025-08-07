@@ -22,11 +22,11 @@ public class LootTableModifier {
                  * Ocean Guardians should have a chance for the Essence rather than guaranteed
                  * so we can just edit the drop table here
                  */
-                if (EntityType.GUARDIAN.getLootTableKey().equals(Optional.of(registryKey))) {
+                if (EntityType.ELDER_GUARDIAN.getLootTableKey().equals(Optional.of(registryKey))) {
                     builder.modifyPools(poolBuilder -> {
                         poolBuilder.with(ItemEntry.builder(EssenceItems.MONUMENT_ESSENCE)
                                 .apply(SetCountLootFunction.builder(
-                                        BinomialLootNumberProvider.create(1, 0.50F)
+                                        BinomialLootNumberProvider.create(1, 0.66F)
                                 ))
                         );
                     });
@@ -69,6 +69,16 @@ public class LootTableModifier {
                 }
 
                 // Trail Essence
+                if (LootTables.TRAIL_RUINS_COMMON_ARCHAEOLOGY.equals(registryKey)) {
+                    builder.modifyPools(poolBuilder -> {
+                        poolBuilder.with(ItemEntry.builder(EssenceItems.TRAIL_ESSENCE)
+                                .apply(SetCountLootFunction.builder(
+                                        UniformLootNumberProvider.create(1.0F, 1.0F)
+                                ))
+                        );
+                    });
+                }
+
                 if (LootTables.TRAIL_RUINS_RARE_ARCHAEOLOGY.equals(registryKey)) {
                     builder.modifyPools(poolBuilder -> {
                         poolBuilder.with(ItemEntry.builder(EssenceItems.TRAIL_ESSENCE)
@@ -83,7 +93,7 @@ public class LootTableModifier {
                 if (LootTables.BURIED_TREASURE_CHEST.equals(registryKey)) {
                     builder.modifyPools(poolBuilder -> {
                         poolBuilder.with(ItemEntry.builder(EssenceItems.BURIED_ESSENCE)
-                                .weight(3)
+                                .weight(2)
                                 .apply(SetCountLootFunction.builder(
                                         UniformLootNumberProvider.create(1.0F, 1.0F)
                                 ))

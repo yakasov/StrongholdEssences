@@ -44,7 +44,7 @@ public interface StructureSetsMixin {
     ) {
         // new RandomSpreadStructurePlacement(80, 20, SpreadType.TRIANGULAR, 10387319)
         if (spacing == 80 && separation == 20 && spreadType == SpreadType.TRIANGULAR) {
-            return new RandomSpreadStructurePlacement(20, 25, SpreadType.TRIANGULAR, salt);
+            return new RandomSpreadStructurePlacement(35, 25, SpreadType.TRIANGULAR, salt);
         }
         return new RandomSpreadStructurePlacement(spacing, separation, spreadType, salt);
     }
