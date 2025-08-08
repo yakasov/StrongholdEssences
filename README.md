@@ -30,7 +30,9 @@ Requires exploration across the world to find the Stronghold and activate the En
 - Passive Essence
 - Compass
 
-Eyes of Ender will no longer function.
+Eyes of Ender will not function until the Stronghold has been located.
+
+The Stronghold Compass is required to activate the End Portal.
 
 Stronghold rings are further away from spawn.
 
