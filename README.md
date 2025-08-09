@@ -63,3 +63,7 @@ Woodland Mansions have less distance between each other.
 ### Stronghold Compass
 
 ![Stronghold Compass crafting recipe](./images/stronghold_compass.png)
+
+## Credits
+
+All textures (except the Stronghold Compass) come from [malcolmriley](https://github.com/malcolmriley/unused-textures). Thank you so much!
